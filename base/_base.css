@@ -1,0 +1,24 @@
+* {
+   box-sizing: border-box;
+}
+
+html {
+   font-size: 62.5%;
+}
+
+body {
+   background-color: #f7f7ff;
+}
+
+img {
+   max-width: 100%;
+}
+
+ul,
+li {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+
+/* -  Linear Gradient: hsl(236, 72%, 79%) to hsl(237, 63%, 64%) */
