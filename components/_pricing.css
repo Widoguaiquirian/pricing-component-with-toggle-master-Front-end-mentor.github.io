@@ -41,6 +41,7 @@
    font-weight: 700;
    color: var(--Dark-Grayish-Blue);
    line-height: 0.8;
+   transition: all 0.3s ease;
 }
 
 sup {
@@ -101,9 +102,81 @@ sup {
    border-radius: 5px;
    margin: 0 auto;
 }
+
+.btn:hover {
+   border: 1px solid hsl(237, 63%, 64%);
+   background: white;
+   color: hsl(237, 63%, 64%);
+}
+
 .btn--main {
    color: hsl(237, 63%, 64%);
    background: var(--Very-Light-Grayish-Blue);
+}
+
+.btn--main:hover {
+   border: 1px solid white;
+   background: hsl(237, 63%, 64%);
+   color: var(--Very-Light-Grayish-Blue);
+}
+
+/* Toggle */
+.component__toggle {
+   display: flex;
+   align-items: center;
+   margin-top: 4rem;
+   justify-content: center;
+}
+
+.component__title {
+   color: var(--Grayish-Blue);
+}
+
+.component__subtitle {
+   color: var(--Light-Grayish-Blue);
+   font-weight: 600;
+}
+
+/* Setting the default styles */
+input[type="checkbox"] {
+   appearance: none;
+   width: 40px;
+   background: linear-gradient(90deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+   height: 26px;
+   border-radius: 12px;
+   outline: none;
+   margin: 0 2rem;
+   cursor: pointer;
+   position: relative;
+}
+
+input[type="checkbox"]::before {
+   content: "";
+   background-color: rgb(255, 255, 255);
+   border-radius: 16px;
+   width: 20px;
+   height: 20px;
+   position: absolute;
+   left: 3px;
+   top: 3px;
+   transition: all 0.4s;
+}
+
+/* When checked */
+input[type="checkbox"]:checked::before {
+   transform: translateX(15px);
+}
+
+.month {
+   display: none;
+}
+
+.month.show {
+   display: block;
+}
+
+.annually.hide {
+   display: none;
 }
 
 /* Media query */
