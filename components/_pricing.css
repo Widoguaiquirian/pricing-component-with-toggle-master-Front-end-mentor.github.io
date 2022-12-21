@@ -184,6 +184,8 @@ input[type="checkbox"]:checked::before {
 @media (max-width: 1100px) {
    .component {
       width: 350px;
+      height: auto;
+      padding-bottom: 5rem;
       grid-template-rows: 180px 1fr;
    }
 
