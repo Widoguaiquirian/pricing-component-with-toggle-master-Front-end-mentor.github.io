@@ -157,25 +157,25 @@ input[type="checkbox"]::before {
    width: 20px;
    height: 20px;
    position: absolute;
-   left: 3px;
+   left: 17px;
    top: 3px;
    transition: all 0.4s;
 }
 
 /* When checked */
 input[type="checkbox"]:checked::before {
-   transform: translateX(15px);
+   transform: translateX(-15px);
 }
 
-.month {
+.annually {
    display: none;
 }
 
-.month.show {
+:has(.toggleBtn:checked) .annually {
    display: block;
 }
 
-.annually.hide {
+:has(.toggleBtn:checked) .month {
    display: none;
 }
 
